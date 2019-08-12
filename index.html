@@ -1,7 +1,46 @@
 <html>
 <head>
+<style>
+
+</style>
+<link rel="stylesheet" href="./css/main.css" />
+<link rel="stylesheet" href="./css/all.css">
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Righteous|Squada+One&display=swap" rel="stylesheet">
+<script>
+$(document).ready(function() {
+    $menuLeft = $('.pushmenu-left');
+    $nav_list = $('#nav_list');
+
+    $nav_list.click(function() {
+    $(this).toggleClass('active');
+    $('.pushmenu-push').toggleClass('pushmenu-push-toright');
+    $menuLeft.toggleClass('pushmenu-open');
+    });
+    });
+</script>
+
+<title>BrokenBits</title>
 </head>
-<body>
-Hello
+<body class="pushmenu-push">
+
+        <nav class="pushmenu pushmenu-left">
+           
+                <ul class="links">
+                  <li> <a href="#"><i class="fas fa-home"> &nbsp;</i>Home</a> </li>
+                  <li> <a href="#"><i class="fas fa-user"> &nbsp;</i>About</a> </li>
+                  <li> <a href="#"><i class="fas fa-hammer"> &nbsp;</i>Projects</a> </li>
+                  <li> <a href="#"><i class="fas fa-pen-nib"> &nbsp;</i>Writing</a> </li>
+                  <li> <a href="#"><i class="fas fa-envelope"> &nbsp;</i>Contact</a> </li>
+                </ul>
+              </nav>
+
+              <div class="title"><span id="nav_list">&nbsp;<i class="fas fa-bars"></i>&nbsp;</span>Broken Bits </div >
+
 </body>
 </html>
