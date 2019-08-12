@@ -10,8 +10,17 @@
   }
   .title{
     font-family: 'Righteous', Tahoma, Geneva, sans-serif;
+    background-color: #ccc;
+    padding:10px;
   }
   
+  .menutitle{
+    font-family: 'Righteous', Tahoma, Geneva, sans-serif;
+    background-color: #aaa;
+    color: #666;
+    padding:10px;
+  }
+
   .pushmenu h3 {
     color: #f1f1f1;
     font-size: 0.8em;
@@ -29,7 +38,7 @@
     width: 50%;
   }
   
-  .links li { margin-top: 30px; }
+  .links li { margin-top: 5px; }
   
   .links li a {
     position: relative;
@@ -49,13 +58,13 @@
     bottom: -5px;
     width: 0;
     height: 2px;
-    background-color: #f1f1f1;
+    background-color: #f00;
     -webkit-transition: width 0.3s ease;
     -moz-transition: width 0.3s ease;
     transition: width 0.3s ease;
   }
   
-  .links li a:hover:after { width: 70%; }
+  .links li a:hover:after { width: 100%; }
   
   .links li a:active { color: #dbdbdb; }
   
@@ -72,7 +81,47 @@
   .pushmenu-push-toright { left: 160px; }
 
   .pushmenu, .pushmenu-push {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
+
+  .jumbotron{
+    background: url("../images/sample.jpg") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    border-radius: .0rem;
+}
+
+.jumbotroncontainer{
+  color: #ccc;
+}
+
+h1{
+  font-family: 'Permananet Marker',Tahoma, Geneva, sans-serif;
+}
+
+.fill { 
+  min-height: 100%;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+.container-fluid {
+  height: 100%;
+  overflow-y: hidden; /* don't show content that exceeds my height */
+}
+.body-film {
+  height: 100%;
+  overflow-y: auto; // a value of 'scroll' will force scrollbars, even if they aren't necessary. This is cleaner.
+  background-color: fadeout(@studio-bar-color, @studio-body-film-trans-delta);
+}
+.block-film {
+  min-height: 100%;
+  overflow-y: hidden; /* don't show content that exceeds my height */
+  background-color: fadeout(@studio-bar-color, @studio-block-film-trans-delta);   
+}

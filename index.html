@@ -1,46 +1,147 @@
 <html>
+
 <head>
-<style>
+    <style>
 
-</style>
-<link rel="stylesheet" href="./css/main.css" />
-<link rel="stylesheet" href="./css/all.css">
+    </style>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/main.css" />
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Righteous|Squada+One&display=swap" rel="stylesheet">
-<script>
-$(document).ready(function() {
-    $menuLeft = $('.pushmenu-left');
-    $nav_list = $('#nav_list');
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
 
-    $nav_list.click(function() {
-    $(this).toggleClass('active');
-    $('.pushmenu-push').toggleClass('pushmenu-push-toright');
-    $menuLeft.toggleClass('pushmenu-open');
-    });
-    });
-</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Righteous|Squada+One&display=swap"
+        rel="stylesheet">
 
-<title>BrokenBits</title>
+    <link href="./css/prism.css"" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            $menuLeft = $('.pushmenu-left');
+            $nav_list = $('#nav_list');
+
+            $nav_list.click(function () {
+                $(this).toggleClass('active');
+                $('.pushmenu-push').toggleClass('pushmenu-push-toright');
+                $menuLeft.toggleClass('pushmenu-open');
+            });
+        });
+    </script>
+
+    <title>BrokenBits</title>
 </head>
+
 <body class="pushmenu-push">
 
-        <nav class="pushmenu pushmenu-left">
-           
-                <ul class="links">
-                  <li> <a href="#"><i class="fas fa-home"> &nbsp;</i>Home</a> </li>
-                  <li> <a href="#"><i class="fas fa-user"> &nbsp;</i>About</a> </li>
-                  <li> <a href="#"><i class="fas fa-hammer"> &nbsp;</i>Projects</a> </li>
-                  <li> <a href="#"><i class="fas fa-pen-nib"> &nbsp;</i>Writing</a> </li>
-                  <li> <a href="#"><i class="fas fa-envelope"> &nbsp;</i>Contact</a> </li>
-                </ul>
-              </nav>
 
-              <div class="title"><span id="nav_list">&nbsp;<i class="fas fa-bars"></i>&nbsp;</span>Broken Bits </div >
+    <nav class="pushmenu pushmenu-left">
 
+        <div class="menutitle">&nbsp </div>
+
+        <ul class="links">
+            <li> <a href="#"><i class="fas fa-home"> &nbsp;</i>Home</a> </li>
+            <li> <a href="#"><i class="fas fa-user"> &nbsp;</i>About</a> </li>
+            <li> <a href="#"><i class="fas fa-hammer"> &nbsp;</i>Projects</a> </li>
+            <li> <a href="#"><i class="fas fa-pen-nib"> &nbsp;</i>Writing</a> </li>
+            <li> <a href="#"><i class="fas fa-envelope"> &nbsp;</i>Contact</a> </li>
+        </ul>
+    </nav>
+
+
+    <div class="title fixed-top"><span id="nav_list">&nbsp;<i class="fas fa-bars"></i>&nbsp;</span>Br0ken Bits </div>
+    <div class="jumbotron" style="border-radius: .0rem;">
+        <div class="jumbotroncontainer">Welcome <br /> this is<br /> just <br />a long
+            list<br /><br /><br /><br /><br /><br /><br /><br /><br /> of ideas and concepts</div>
+    </div>
+    <div class="container-fluid fill-height">
+        <div class="row align-items-start">
+
+            <div class="col-md-4">
+                <h1 style="font-family: Permananet+Marker">Using Github to host your site</h1>
+                Looking for a secure place to host your website. Follow this tutorial and you too will have a secure and
+                easy to update location on the web.
+            </div>
+            <div class="col-md-4">
+                Creating your own Font Icons
+            </div>
+            <div class="col-md-4">
+                Overlays in Rasperry PI
+            </div>
+        </div>
+
+
+                <pre class="line-numbers" style="max-height: 30em" data-line="4-6" ><code class="lang-csharp">
+switch (e.Action)
+{
+    case FileMenu_View.FileHandlerActions.Created:
+    case FileMenu_View.FileHandlerActions.Opened:
+        projectTree.DataContext = _fmv._ProjectTree;
+        TreeControls.DataContext = _fmv._ProjectTree;
+        treeScrollViewer.Visibility = Visibility.Visible;
+        File_Path.Text = e.FilePath + "\\" + e.FileName;
+        _sv.setProjectPath(e.FilePath + "\\" + e.FileName);
+        _statusLink = e.FilePath;
+        TreeControls.Visibility = Visibility.Visible;
+        projectTree.Visibility = Visibility.Visible;
+        Status.Text = "Project Loaded";
+        _closeMenu = true;
+        _sv.SetBindings(_fmv._ProjectTree);
+        SelectItem();
+        RefreshMetrics();
+        break;
+    case FileMenu_View.FileHandlerActions.Saved:
+        Status.Text = "Saved: " + e.FileName + " " + DateTime.Now.ToShortTimeString();
+        _closeMenu = true;
+        break;
+    case FileMenu_View.FileHandlerActions.SavedAs:
+        _closeMenu = true;
+        break;
+    case FileMenu_View.FileHandlerActions.Canceled:
+        _closeMenu = true;
+        break;
+    case FileMenu_View.FileHandlerActions.Closed:
+        TreeControls.Visibility = Visibility.Collapsed;
+        projectTree.Visibility = Visibility.Collapsed;
+        projectTree.ContextMenu = null;
+        _sv.setProjectPath(string.Empty);
+        Status.Text = "Project Closed";
+        _statusLink = string.Empty;
+        File_Path.Text = string.Empty;
+        _closeMenu = true;
+        ItemContentControl.Content = null;
+        break;
+    case FileMenu_View.FileHandlerActions.UpdateStatus:
+        Status.Text = e.StatusMessage;
+        _statusLink = e.FilePath;
+        break;
+
+
+}
+                </code></pre>    
+
+
+        <div class="row align-items-end">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascript/prism.js"></script>
 </body>
+
 </html>
