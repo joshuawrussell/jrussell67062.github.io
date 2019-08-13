@@ -7,3 +7,4 @@ TODO:
  * [ ] Document Process
  * [ ] Convert Framework to  Fragments
  * [ ] Create article collection pages
+ * [ ] Build Logo
