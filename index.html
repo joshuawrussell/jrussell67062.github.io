@@ -1,11 +1,7 @@
 <html lang="en">
 
 <head>
-    <style>
-
-    </style>
-
-
+        <title>BrokenBits</title>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
@@ -24,140 +20,10 @@
     <link rel="stylesheet" href="./css/modern-business.css">
     <link rel="stylesheet" href="./css/main.css" />
 
-    <title>BrokenBits</title>
+
 </head>
 
 <body>
-
-    <!--
-
-            <pre class="line-numbers" style="max-height: 30em" data-line="4-6"><code class="lang-csharp">
-switch (e.Action)
-{
-    case FileMenu_View.FileHandlerActions.Created:
-    case FileMenu_View.FileHandlerActions.Opened:
-        projectTree.DataContext = _fmv._ProjectTree;
-        TreeControls.DataContext = _fmv._ProjectTree;
-        treeScrollViewer.Visibility = Visibility.Visible;
-        File_Path.Text = e.FilePath + "\\" + e.FileName;
-        _sv.setProjectPath(e.FilePath + "\\" + e.FileName);
-        _statusLink = e.FilePath;
-        TreeControls.Visibility = Visibility.Visible;
-        projectTree.Visibility = Visibility.Visible;
-        Status.Text = "Project Loaded";
-        _closeMenu = true;
-        _sv.SetBindings(_fmv._ProjectTree);
-        SelectItem();
-        RefreshMetrics();
-        break;
-    case FileMenu_View.FileHandlerActions.Saved:
-        Status.Text = "Saved: " + e.FileName + " " + DateTime.Now.ToShortTimeString();
-        _closeMenu = true;
-        break;
-    case FileMenu_View.FileHandlerActions.SavedAs:
-        _closeMenu = true;
-        break;
-    case FileMenu_View.FileHandlerActions.Canceled:
-        _closeMenu = true;
-        break;
-    case FileMenu_View.FileHandlerActions.Closed:
-        TreeControls.Visibility = Visibility.Collapsed;
-        projectTree.Visibility = Visibility.Collapsed;
-        projectTree.ContextMenu = null;
-        _sv.setProjectPath(string.Empty);
-        Status.Text = "Project Closed";
-        _statusLink = string.Empty;
-        File_Path.Text = string.Empty;
-        _closeMenu = true;
-        ItemContentControl.Content = null;
-        break;
-    case FileMenu_View.FileHandlerActions.UpdateStatus:
-        Status.Text = e.StatusMessage;
-        _statusLink = e.FilePath;
-        break;
-
-
-}
-                </code></pre>
-
-
-            <div class="row align-items-end">
-                <div class="col">
-                    One of three columns
-                </div>
-                <div class="col">
-                    One of three columns
-                </div>
-                <div class="col">
-                    One of three columns
-                </div>
-            </div>
-        </div>
-    </div>
-
-        <div id="content">
-
-        
-
-            <div class="row align-items-start">
-
-                <div class="col-md-4">
-                    <h1 style="font-family: Permananet+Marker">Using Github to host your site</h1>
-                    Looking for a secure place to host your website. Follow this tutorial and you too will have a secure
-                    and
-                    easy to update location on the web.
-                </div>
-                <div class="col-md-4">
-                    <h1 style="font-family: Permananet+Marker">Using Github to host your site</h1>
-                    Creating your own Font Icons
-                </div>
-                <div class="col-md-4">
-                    <h1 style="font-family: Permananet+Marker">Using Github to host your site</h1>
-                    Overlays in Rasperry PI
-                </div>
-            </div>
-            <!--
-        <h2>Collapsible Sidebar Using Bootstrap 4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h3>Lorem Ipsum Dolor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="row align-items-end">
-                <div class="col">
-                    One of three columns
-                </div>
-                <div class="col">
-                    One of three columns
-                </div>
-                <div class="col">
-                    One of three columns
-                </div>
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="container">
-                <span class="text-muted">Place sticky footer content here.</span>
-            </div>
-        </footer>
-    </div>
-
-
-
--->
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -231,21 +97,21 @@ switch (e.Action)
             </ol>
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image: url('./images/sample.jpg')">
+                <div class="carousel-item active" style="background-image: url('./images/10002.jpg')">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>First Slide</h3>
                         <p>This is a description for the first slide.</p>
                     </div>
                 </div>
                 <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('./images/pi.jpg')">
+                <div class="carousel-item" style="background-image: url('./images/15301.jpg')">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Second Slide</h3>
                         <p>This is a description for the second slide.</p>
                     </div>
                 </div>
                 <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+                <div class="carousel-item" style="background-image: url('./images/4543427.jpg')">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Third Slide</h3>
                         <p>This is a description for the third slide.</p>
@@ -269,55 +135,17 @@ switch (e.Action)
         <!--
     <h1 class="my-4">Welcome to Modern Business</h1>
 
-    <!-- Marketing Icons Section 
-    <div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Card Title</h4>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row 
-
     <!-- Portfolio Section -->
 
         <h2 class="my-4 title"> <i class="fas fa-book-open"> &nbsp;</i>Instructions</h2>
 
         <div class="row">
-            <div class="col-lg-4 col-sm-6 portfolio-item h-50">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card">
+                    <a href="./articles/sozi-presentations.html"><img class="card-img-top" src="./images/sozi.png" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
-                            <a href="#">Using Sozi to create a Dynamic SVG driven presentations.</a>
+                            <a href="./articles/sozi-presentations.html">Using Sozi to create a Dynamic SVG driven presentations.</a>
                         </h4>
                         <p class="card-text">https://sozi.baierouge.fr/release-19.04.html</p>
                         <a href="#" class="badge badge-primary"><i class="fas fa-laptop-code"> &nbsp;</i>Inkscape</a>
@@ -326,7 +154,7 @@ switch (e.Action)
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 portfolio-item h-50">
-                <div class="card h-100">
+                <div class="card">
                     <a href="#"><img class="card-img-top" src="./images/github.jpg" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
@@ -337,7 +165,7 @@ switch (e.Action)
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 portfolio-item h-50">
-                <div class="card h-100">
+                <div class="card">
                     <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
