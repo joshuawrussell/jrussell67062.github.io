@@ -22,8 +22,7 @@
     </head>
 <body>
 
-
-<!--#include virtual="/navigation.html"-->
+<div id="navigation"></div>
 
 
 <!-- Page Content -->
@@ -45,10 +44,10 @@
         
 <p>I have been using SVGs illustrations in PowerPoint for years and I have always been interested in creating something more dynamic that stale Slides.</p>
 
+<h3>INSTALL</h3>
 
 Lets download Sozi
-https://sozi.baierouge.fr/pages/install.html
-
+<a href="https://sozi.baierouge.fr/pages/install.html">https://sozi.baierouge.fr/pages/install.html</a>
 
 Check your version of Windows but you will likely need the 64 bit version.
 
@@ -57,9 +56,18 @@ Sozi-19.04.22-1555944973-windows-x64.zip
 Copy the contents of of the Zip File to your Program Files
 <img src="./sozi-presentations//explorer.png"/>
 
-</div>
 
-<!--#include virtual="/footer.html"-->
+
+</div>
+<div id="footer"></div>
+
+ <script>
+  $(document).ready( function() {
+    $("#navigation").load("/navigation.html");
+    $("#footer").load("/footer.html");
+      
+  });
+  </script>
 
 </body>
 
