@@ -22,7 +22,9 @@
     </head>
 <body>
 
-<div id="navigation"></div>
+<!--<div id="navigation"></div>-->
+<!--#include virtual="/navigation.html"-->
+
 
 <!-- Page Content -->
 <div class="container">
@@ -34,7 +36,7 @@
     
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="../index.html">Home</a>
+            <a href="/index.html">Home</a>
           </li>
           <li class="breadcrumb-item active">Tutorials</li>
         </ol>
@@ -60,7 +62,7 @@ Copy the contents of of the Zip File to your Program Files
 
  <script>
   $(document).ready( function() {
-    $("#navigation").load("/navigation.html");
+    //$("#navigation").load("/navigation.html");
     $("#footer").load("/footer.html");
       
   });
