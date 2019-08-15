@@ -22,7 +22,7 @@
     </head>
 <body>
 
-    <!--#include virtual="../includes/navigation.html" -->
+<div id="navigation"></div>
 
 <!-- Page Content -->
 <div class="container">
@@ -58,6 +58,16 @@ Copy the contents of of the Zip File to your Program Files
 </div>
 
  <!--#include virtual="../includes/footer.html" -->
+ <div id="footer"></div>
+
+ <script>
+  $(document).ready( function() {
+    $("#navigation").load("../includes/navigation.html");
+    $("#footer").load("../includes/footer.html");
+      
+  });
+  </script>
+
 </body>
 
 </html>
