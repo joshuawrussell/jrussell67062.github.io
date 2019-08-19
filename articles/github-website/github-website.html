@@ -110,7 +110,7 @@ In the index.html file, lets add the following lines in the <head> of the file a
 </p>
 
 
-<pre class="language-html line-numbers" style="white-space: pre-wrap; counter-reset: linenumber -6;" data-start="0" data-line="4,5,8,11,12"><code><!--
+<pre class="language-html line-numbers" data-start="0" data-line="4,5,8,11,12"><code><!--
 <head>
     <title>Home Page</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -123,7 +123,7 @@ In the index.html file, lets add the following lines in the <head> of the file a
     <link rel="stylesheet" href="/css/modern-business.css">
     <link rel="stylesheet" href="/css/main.css" />
 </head>
-    --></code></pre>
+--></code></pre>
 
     <ul>
         <li>Line 3 - Includes JQuery javascript library - a tool required to interact with the webpage after it loads on the users computer</li>
@@ -137,33 +137,31 @@ In the index.html file, lets add the following lines in the <head> of the file a
 
 <p>Paste the following values into the file</p>
 
-<pre  class="language-css line-numbers" style="white-space: pre-wrap; counter-reset: linenumber -6;" data-start="0">
-    <code>
-    /*!
-    * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
-    * Copyright 2013-2019 Start Bootstrap
-    * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
-    */
-    body {
-        padding-top: 56px;
-    }
+<pre class="language-css line-numbers"><code><!--
+/*!
+* Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+* Copyright 2013-2019 Start Bootstrap
+* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+*/
+body {
+    padding-top: 56px;
+}
 
-    .carousel-item {
-        height: 65vh;
-        min-height: 300px;
-        max-height: 480px;
-        background: no-repeat center center scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    max-height: 480px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-    .portfolio-item {
-        margin-bottom: 80px;
-    }
-    </code>
-</pre>
+.portfolio-item {
+    margin-bottom: 80px;
+}
+--></code></pre>
 
 
 <p>Now we can load the file again in Live Server and you will see the changes</p>
@@ -173,16 +171,13 @@ In the index.html file, lets add the following lines in the <head> of the file a
 <p>For this example, I will keep the navigation very simple, but once you understand how to add menu items and create the pages - you will be able to add your own items.</p>
 
 <P>Lets replace these lines...</P>
-<pre  class="language-html line-numbers" data-start="0">
-        <code><!--    
-        <h1>My Title</h1>
-        <p>Hello World!</p>
-            --></code> 
-</pre>  
+<pre class="language-html line-numbers" data-start="0"><code><!-- 
+<h1>My Title</h1>
+<p>Hello World!</p>
+--></code></pre>  
 
 <p>... with these lines</p>
-<pre class="language-html line-numbers" style="white-space: pre-wrap; counter-reset: linenumber -6;" data-start="0">
-        <code><!-- 
+<pre class="language-html line-numbers" data-start="0"><code><!-- 
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand title" href="/index.html">{Your Title}</a>
@@ -214,15 +209,48 @@ In the index.html file, lets add the following lines in the <head> of the file a
                 </div>
             </div>
         </nav>
---></code> 
-</pre>  
-<h4>5. Adding your own Styles</h4>
+--></code></pre>  
+<h4>6. Adding your own Styles</h4>
 
-<p>In the Explorer in the left hand menu, add a new folder called "CSS".  Inside of this folder, add a new file called "modern-business.css"</p>
+<p>In the Explorer in the left hand menu, add a new file called "main.css". In this file we are going to be able to grab style values (CSS) and substitute (override) them with ours.</p> 
 
-Embedding fonts
+<pre class="language-css line-numbers" data-start="0" data-line="3,6,9"><code><!--
+body{
+    font-size: 1.4rem;
+   }
+   .bg-dark {
+     background-color: #816619!important;
+   }
+   a {
+     color: #ffb300;
+     text-decoration: none;
+     background-color: transparent;
+     -webkit-text-decoration-skip: objects;
+   }
+--></code></pre>    
 
-For this example, I 
+<p>This file (CSS), because it is loaded last, will be applied to your website overriding other values.</p>
+
+<ul>
+    <li>Line 2 - This line allows you to set the size of your font.  it is a good idea to use the "rem" unit. More on this later.</li>
+    <li>Line 5 - This will allow you to set the color of your header and footer</li>
+    <li>Line 8 - This line allows you to set the color of any links in your text</li>
+</ul>
+
+<p>Explore these values and then we will move on to using some custom fonts.</p>
+
+
+<h4>7. Embedding fonts</h4> 
+
+<p>In another browser tab, open <a href="https://fonts.google.com/">https://fonts.google.com/</a>.  You can pick any font you like, but for this example, lets search for the Dancing Script Font</p>
+
+<p>Click on the add button to select the font.  In the bottom of the page, there will be a menu that states "1 Family Selected" - Click on this menu.</p>
+
+<p>We want to add this font to our main.css file, so you need to click on the "@import" option.  We need to copy this text and paste it into the top of our "main.css file"</p>
+
+<pre class="language-css line-numbers" data-start="0" data-line="3,6,9"><code><!--
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+--></code></pre>
 
 Icon fonts
 
