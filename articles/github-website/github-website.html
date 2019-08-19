@@ -79,7 +79,7 @@ local webserver
 
 <p>Click on the file to open it.  Index.html is your "Home Page".  We will be adding the basic structure of the page.</p>
 
-<pre class="language-html line-numbers"><code><!--
+<pre class="language-html line-numbers" data-start="0"><code><!--
 <html>
 <head>
     <title>Home Page</title>
@@ -87,9 +87,10 @@ local webserver
 <body>
     <h1>My Title</h1>
     <p>Hello World!</p>
-</body>
+< /body>
 </html>
 --></code></pre>
+
 
 
 <p>You can read more about html <a href="https://www.w3schools.com/html/html_intro.asp">here.</a></p>
@@ -102,11 +103,122 @@ local webserver
 
 <p>There are many Bootstrap Templates to choose from and many are free.  For this tutorial, we will be using parts of the <a href="https://startbootstrap.com/templates/modern-business/" target="blank">Modern Business template.</a>  You can see a preview of it here: <a href="https://startbootstrap.com/previews/modern-business/" target="blank">Modern Business Preview</a>.  You can download and explore the files if you would like, but we will not need the files for this tutorial.</p>
 
+<p>Now we can add the basic javascript and CSS references required for Bootstrap to work properly</p>
 
-open in browser
-https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser
+<p>
+In the index.html file, lets add the following lines in the <head> of the file after the title.
+</p>
 
-https://www.jqueryscript.net/menu/Left-to-right-Push-Menu-With-jQuery-CSS3.html
+
+<pre class="language-html line-numbers" style="white-space: pre-wrap; counter-reset: linenumber -6;" data-start="0" data-line="4,5,8,11,12"><code><!--
+<head>
+    <title>Home Page</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"
+    rel="stylesheet" >
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/modern-business.css">
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+    --></code></pre>
+
+    <ul>
+        <li>Line 3 - Includes JQuery javascript library - a tool required to interact with the webpage after it loads on the users computer</li>
+        <li>Line 4 - Includes the Bootstrap <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"> Cascading Style Sheet </a>(CSS) - handles the look and feel of the page</li>
+        <li>Line 7 - Includes the Bootstrap javascript library - handles the dynamic layout of the page</li>
+        <li>Line 10 - This line references a CSS file needed for the Modern Business template that we are going to add now.</li>
+        <li>Line 11 - This is a Cascading Style Sheet that we will use in step 5.</li>
+    </ul>
+
+<p>In the Explorer in the left hand menu, add a new folder called "CSS".  Inside of this folder, add a new file called "modern-business.css"</p>
+
+<p>Paste the following values into the file</p>
+
+<pre  class="language-css line-numbers" style="white-space: pre-wrap; counter-reset: linenumber -6;" data-start="0">
+    <code>
+    /*!
+    * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+    * Copyright 2013-2019 Start Bootstrap
+    * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+    */
+    body {
+        padding-top: 56px;
+    }
+
+    .carousel-item {
+        height: 65vh;
+        min-height: 300px;
+        max-height: 480px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .portfolio-item {
+        margin-bottom: 80px;
+    }
+    </code>
+</pre>
+
+
+<p>Now we can load the file again in Live Server and you will see the changes</p>
+
+<h4>5. Adding your Navigation</h4>
+
+<p>For this example, I will keep the navigation very simple, but once you understand how to add menu items and create the pages - you will be able to add your own items.</p>
+
+<P>Lets replace these lines...</P>
+<pre  class="language-html line-numbers" data-start="0">
+        <code><!--    
+        <h1>My Title</h1>
+        <p>Hello World!</p>
+            --></code> 
+</pre>  
+
+<p>... with these lines</p>
+<pre class="language-html line-numbers" style="white-space: pre-wrap; counter-reset: linenumber -6;" data-start="0">
+        <code><!-- 
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand title" href="/index.html">{Your Title}</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html"><i class="fas fa-home"> &nbsp;</i>Home</a></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html"><i class="fas fa-user"> &nbsp;</i>About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Resources
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                                    <a class="dropdown-item" href="https://blog.hackster.io/" target="blank">hackster.io</a>
+                                    <a class="dropdown-item" href="https://www.adafruit.com/" target="blank">Adafruit</a>
+                                    <a class="dropdown-item" href="https://www.sparkfun.com/" target="blank">Sparkfun</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+--></code> 
+</pre>  
+<h4>5. Adding your own Styles</h4>
+
+<p>In the Explorer in the left hand menu, add a new folder called "CSS".  Inside of this folder, add a new file called "modern-business.css"</p>
 
 Embedding fonts
 
