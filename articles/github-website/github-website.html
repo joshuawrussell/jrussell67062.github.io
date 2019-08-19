@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Broken Bits - Using Github to Host your Website</title>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+            integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Righteous|Squada+One&display=swap"
+            rel="stylesheet">
+    
+        <link rel=" stylesheet" href="/css/prism.css" />
+    
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/css/modern-business.css">
+        <link rel="stylesheet" href="/css/main.css" />
+        
+    </head>
+<body>
+
+<div id="navigation"></div>
+
+
+<!-- Page Content -->
+<div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">Using Github to Host your Website <br />
+          <small>Github, HTML</small>
+        </h1>
+    
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active">Tutorials</li>
+        </ol>
+    
+        <img class="img-fluid rounded mb-4" src="http://placehold.it/1200x300" alt="">
+        
+        <p>
+        Several months ago I ran across an article published by <a href="https://medium.com/@svinkle/publish-and-share-your-own-website-for-free-with-github-2eff049a1cb5" target="blank" >Scott Vinkle (Medium)</a>.  It was interesting to see how Github could be used to host static (more on this in a moment) websites for free.
+        
+        It is a great tutorial - I thought I would extend it and provide a few more steps to get a bootstrap template setup and an intial website working.
+        
+        </p>
+
+        <p>I mentioned using github for static websites because this would not be viable solution for large data driven or ecommerce sites, but for sites like this one where all of the content is manually generated and only a place to host the content is needed - it works well.  HTML, CSS and Javascript are supported. This solution would be adequate for a blog or a portfolio website.</p>
+
+        <p>
+        For this tutorial, we will use Microsoft Code as an editor.  Microsoft Code has built in integration for GIT and extensions that will allow us to create, modify and view our local webiste in a light weight web server.
+        </p>
+
+<h3>Installing the Tools</h3>
+
+<p><strong><img src="/images/mscode.jpg" width="16" height="16"> <a href="https://code.visualstudio.com/">Microsoft Code</a></strong></p>
+<p>Microsoft Code is an open source editor that runs on Windows, Linux and Mac.  It can be installed from here:</p>
+<p><a href="https://code.visualstudio.com/#alt-downloads">Installation Page</img></a></p>
+
+<h3>Setting up Github</h3>
+
+<p>Let's create a Github account</p>
+Git
+
+local webserver
+
+<h3>Getting Started</h3>
+
+<h4>1. Lets Clone our new Github project</h4>
+
+
+<h4>2. Creating the Index Page</h4>
+
+<p>In MS code, right click in the empty workspace and select new file.  Name the file <b>index.html</b></p>
+
+<p>Click on the file to open it.  Index.html is your "Home Page".  We will be adding the basic structure of the page.</p>
+
+<pre class="language-html line-numbers"><code><!--
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>My Title</h1>
+    <p>Hello World!</p>
+</body>
+</html>
+--></code></pre>
+
+
+<p>You can read more about html <a href="https://www.w3schools.com/html/html_intro.asp">here.</a></p>
+
+<h4>3. Setting up the Bootstrap Template</h4>
+
+<p>You might be thinking - what is a <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="blank">Bootstrap</a> or what is a Bootstrap template?  Bootstrap is a layout tool that provides a consistent, modern, responsive framework that will allow us to get a working website without spending alot of time working out inonsistencies between different browsers (Internet Explorer, Edge, Firefox, Chrome).</p>
+
+<p>You can find many basic templates here: <a href="https://startbootstrap.com/templates" target="blank">Bootstrap Templates</a></p>
+
+<p>There are many Bootstrap Templates to choose from and many are free.  For this tutorial, we will be using parts of the <a href="https://startbootstrap.com/templates/modern-business/" target="blank">Modern Business template.</a>  You can see a preview of it here: <a href="https://startbootstrap.com/previews/modern-business/" target="blank">Modern Business Preview</a>.  You can download and explore the files if you would like, but we will not need the files for this tutorial.</p>
+
+
+open in browser
+https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser
+
+https://www.jqueryscript.net/menu/Left-to-right-Push-Menu-With-jQuery-CSS3.html
+
+Embedding fonts
+
+For this example, I 
+
+Icon fonts
+
+https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+Creating the Sidebar
+
+Creating a Logo
+
+
+
+https://startbootstrap.com/templates/modern-business/
+
+<p><i>Last Updated: August 2019</i></p>
+</div>
+<div id="footer"></div>
+
+ <script>
+  $(document).ready( function() {
+    $("#navigation").load("/includes/navigation.html");
+    $("#footer").load("/includes/footer.html");
+      
+  });
+  </script>
+  <script src="/javascript/prism.js"></script>
+
+</body>
+</html> 

@@ -2,9 +2,9 @@ The purpose of this project is to create a website to collect project concepts, 
 
 TODO:
 
- * [ ] Add Footer
- * [ ] Add Responsive Menu
+ * [x] Add Footer
+ * [x] Add Responsive Menu
  * [ ] Document Process
- * [ ] Convert Framework to  Fragments
+ * [x] Convert Framework to  Fragments
  * [ ] Create article collection pages
  * [ ] Build Logo

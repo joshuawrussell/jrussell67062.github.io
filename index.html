@@ -25,61 +25,7 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand title" href="index.html">Broken Bits</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="fas fa-home"> &nbsp;</i>Home</a></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html"><i class="fas fa-user"> &nbsp;</i>About</a>
-                    </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="services.html"><i class="fas fa-pen-nib"> &nbsp;</i>Writing</a> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope"> &nbsp;</i>Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-hammer"> &nbsp;</i> Projects
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" href="portfolio-1-col.html"><i class="fas fa-microchip">
-                                    &nbsp;</i>Electronics</a>
-                            <a class="dropdown-item" href="portfolio-2-col.html"><i class="fas fa-laptop-code">
-                                    &nbsp;</i>Software</a>
-                            <a class="dropdown-item" href="portfolio-3-col.html"><i class="fas fa-cubes"> &nbsp;</i>3D
-                                Modeling</a>
-                            <a class="dropdown-item" href="portfolio-4-col.html"><i class="fas fa-print"> &nbsp;</i>FFM
-                                Printing</a>
-                            <a class="dropdown-item" href="portfolio-item.html"><i class="fas fa-print">
-                                    &nbsp;</i>Design</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Resources
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                                <a class="dropdown-item" href="https://blog.hackster.io/" target="blank">hackster.io</a>
-                                <a class="dropdown-item" href="https://www.adafruit.com/" target="blank">Adafruit</a>
-                                <a class="dropdown-item" href="https://www.sparkfun.com/" target="blank">Sparkfun</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navigation"></div>
 
 
 
@@ -137,127 +83,26 @@
 
     <!-- Portfolio Section -->
 
-        <h2 class="my-4 title"> <i class="fas fa-book-open"> &nbsp;</i>Instructions</h2>
+        <h2 class="my-4 title"> <i class="fas fa-book-open"> &nbsp;</i>Tutorials</h2>
 
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card">
-                    <a href="./articles/sozi-presentations.html"><img class="card-img-top" src="./images/sozi.png" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="./articles/sozi-presentations.html">Using Sozi to create a Dynamic SVG driven presentations.</a>
-                        </h4>
-                        <p class="card-text">https://sozi.baierouge.fr/release-19.04.html</p>
-                        <a href="#" class="badge badge-primary"><i class="fas fa-laptop-code"> &nbsp;</i>Inkscape</a>
-                        <a href="#" class="badge badge-primary"><i class="fas fa-microchip"> &nbsp;</i>Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item h-50">
-                <div class="card">
-                    <a href="#"><img class="card-img-top" src="./images/github.jpg" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Using GitHub to Host Websites</a>
-                        </h4>
-                        <p class="card-text">Is there a better place to host content?  Why not use GitHub, you are here everyday.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item h-50">
-                <div class="card">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project Three</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam,
-                            error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere
-                            atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-                    </div>
-                </div>
-            </div>
+        <div class="card-group">
+            <div id="tutorial1" class="col-lg-4 col-sm-6 portfolio-item h-50"></div>
+            <div id="tutorial2" class="col-lg-4 col-sm-6 portfolio-item h-50"></div>
+            <div id="tutorial3" class="col-lg-4 col-sm-6 portfolio-item h-50"></div>
+
+            <!-- <div id="tutorial4" class="col-lg-4 col-sm-6 portfolio-item h-50"></div>
+            <div id="tutorial5" class="col-lg-4 col-sm-6 portfolio-item h-50"></div>
+            <div id="tutorial6" class="col-lg-4 col-sm-6 portfolio-item h-50"></div> -->
            
         </div>
 
         <h2 class="my-4 title"> <i class="fas fa-hammer"> &nbsp;</i>Projects</h2>
 
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Inkscape ICO Plugin</a>
-                        </h4>
-                        <p class="card-text">Generate multiple ICOs from a single SVG</p>
-                        <a href="#" class="badge badge-primary"><i class="fas fa-laptop-code"> &nbsp;</i>Inkscape</a>
-                        <a href="#" class="badge badge-primary"><i class="fas fa-microchip"> &nbsp;</i>Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project Two</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
-                            euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project Three</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam,
-                            error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere
-                            atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project Four</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
-                            euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project Five</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
-                            euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project Six</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum
-                            nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in
-                            voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="card-group">
+            <div id="project1" class="col-lg-4 col-sm-6 portfolio-item h-50"></div>
+            <div id="project2" class="col-lg-4 col-sm-6 portfolio-item h-50"></div>
+            <div id="project3" class="col-lg-4 col-sm-6 portfolio-item h-50"></div>
+
         </div>
         <!-- /.row -->
 
@@ -304,13 +149,30 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-3 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Josh Russell 2019</p>
-        </div>
-        <!-- /.container -->
-    </footer>
+    <div id="footer" />
 
+    <script>
+        $(document).ready( function() {
+          $("#navigation").load("/includes/navigation.html");
+          $("#footer").load("/includes/footer.html");
+          $("#tutorial1").load("/includes/articles/github-website.html");
+          $("#tutorial2").load("/includes/articles/sozi-inkscape.html");
+          $("#tutorial3").load("/includes/articles/icon-fonts.html");
+
+          $("#tutorial4").load("/includes/articles/github-website.html");
+          $("#tutorial5").load("/includes/articles/sozi-inkscape.html");
+          //$("#tutorial6").load("/includes/articles/icon-fonts.html");
+          //$("#tutorial4").load("");
+          //$("#tutorial5").load("");
+          //$("#tutorial6").load("");
+
+          $("#project1").load("/includes/articles/pigrl-improvements.html");
+          $("#project2").load("/includes/articles/inkscape-ico-plugin.html");
+          $("#project3").load("/includes/articles/focustron.html");
+        });
+
+
+    </script>
 
 
 </body>
